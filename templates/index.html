@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Random Joke Generator</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; background:#f6f8fa; color:#222; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; }
+    .card { background:white; padding:24px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.08); width:min(720px,92%); text-align:center; }
+    h1 { margin:0 0 8px 0; font-size:1.4rem; }
+    #joke { margin:18px 0; font-size:1.125rem; min-height:48px; }
+    button { padding:10px 16px; font-size:1rem; border-radius:8px; border:0; background:#0366d6; color:white; cursor:pointer; }
+    button:disabled { opacity:0.6; cursor:wait; }
+    .small { color:#666; font-size:0.875rem; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Random Joke Generator</h1>
+    <div id="joke" class="small">Click the button to get a joke!</div>
+    <div>
+      <button id="btn">Get a Joke</button>
+    </div>
+    <p class="small" style="margin-top:12px;">
+      Powered by an external joke API. <a href="#" id="apiLink" target="_blank" rel="noopener">API</a>
+    </p>
+  </div>
+
+  <script>
+    const btn = document.getElementById('btn');
+    const jokeEl = document.getElementById('joke');
+    const apiLink = document.getElementById('apiLink');
+
+    async function fetchJoke() {
+      btn.disabled = true;
+      jokeEl.textContent = 'Loading...';
+      try {
+        const res = await fetch('/api/joke');
+        const json = await res.json();
+        if (json.success) {
+          jokeEl.textContent = json.joke;
+        } else {
+          jokeEl.textContent = 'Error: ' + (json.error || 'Unknown error');
+        }
+      } catch (err) {
+        jokeEl.textContent = 'Network error. Try again.';
+      } finally {
+        btn.disabled = false;
+      }
+    }
+
+    // Populate API link from server (optional)
+    (async () => {
+      try {
+        const resp = await fetch('/api/joke'); // quick fetch to get headers
+        // We don't have API URL returned by /api/joke, so keep default link
+      } catch (e) { /* ignore */ }
+      // Update link to JokeAPI for convenience
+      apiLink.href = 'https://v2.jokeapi.dev';
+    })();
+
+    btn.addEventListener('click', fetchJoke);
+  </script>
+</body>
+</html>
