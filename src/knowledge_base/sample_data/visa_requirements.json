@@ -1,0 +1,55 @@
+{
+  "USA": {
+    "visa_type": "F-1 Student Visa",
+    "requirements": [
+      "Valid passport",
+      "Form I-20",
+      "SEVIS fee receipt",
+      "Financial proof",
+      "Academic transcripts",
+      "English proficiency test scores"
+    ],
+    "processing_time": "3-5 weeks",
+    "fee": "$510",
+    "interview_required": true
+  },
+  "UK": {
+    "visa_type": "Tier 4 Student Visa",
+    "requirements": [
+      "CAS from university",
+      "Financial proof (£1,334/month for London)",
+      "TB test certificate",
+      "Academic qualifications",
+      "English proficiency (IELTS/TOEFL)"
+    ],
+    "processing_time": "3 weeks",
+    "fee": "£363",
+    "interview_required": "Sometimes"
+  },
+  "Canada": {
+    "visa_type": "Study Permit",
+    "requirements": [
+      "Letter of acceptance",
+      "Proof of financial support",
+      "Passport photos",
+      "Medical exam",
+      "Police certificate"
+    ],
+    "processing_time": "8 weeks",
+    "fee": "CAD 150",
+    "interview_required": false
+  },
+  "Australia": {
+    "visa_type": "Student Visa (subclass 500)",
+    "requirements": [
+      "CoE from institution",
+      "Genuine Temporary Entrant requirement",
+      "Health insurance (OSHC)",
+      "English proficiency",
+      "Financial capacity proof"
+    ],
+    "processing_time": "4-6 weeks",
+    "fee": "AUD 630",
+    "interview_required": "Rarely"
+  }
+}
