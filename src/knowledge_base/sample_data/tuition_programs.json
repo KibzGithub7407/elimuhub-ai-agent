@@ -1,0 +1,47 @@
+[
+  {
+    "program": "IGCSE",
+    "subjects": ["Mathematics", "Physics", "Chemistry", "Biology", "English"],
+    "duration": "2 years",
+    "fee_structure": {
+      "per_subject": "KES 15,000/term",
+      "full_program": "KES 120,000/year"
+    },
+    "features": [
+      "Expert tutors",
+      "Regular assessments",
+      "Mock exams",
+      "University guidance"
+    ]
+  },
+  {
+    "program": "A-Levels",
+    "subjects": ["Mathematics", "Further Mathematics", "Physics", "Chemistry", "Biology"],
+    "duration": "2 years",
+    "fee_structure": {
+      "per_subject": "KES 18,000/term",
+      "full_program": "KES 150,000/year"
+    },
+    "features": [
+      "Cambridge curriculum",
+      "University preparation",
+      "Career counseling",
+      "Research projects"
+    ]
+  },
+  {
+    "program": "SAT Preparation",
+    "subjects": ["Math", "Evidence-Based Reading and Writing"],
+    "duration": "3 months",
+    "fee_structure": {
+      "intensive": "KES 50,000",
+      "regular": "KES 35,000"
+    },
+    "features": [
+      "Full-length practice tests",
+      "Score improvement guarantee",
+      "Personalized study plan",
+      "College application guidance"
+    ]
+  }
+]
