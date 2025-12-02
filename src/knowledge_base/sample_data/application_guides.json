@@ -1,0 +1,39 @@
+{
+  "USA_Application_Guide": {
+    "steps": [
+      "Research universities and programs",
+      "Take required tests (SAT/ACT, TOEFL/IELTS)",
+      "Prepare application documents",
+      "Write personal statement/essays",
+      "Get recommendation letters",
+      "Complete online application",
+      "Submit financial documents",
+      "Apply for student visa"
+    ],
+    "timeline": "Start 12-18 months before intake",
+    "important_dates": {
+      "Early Decision": "November 1",
+      "Regular Decision": "January 1-15",
+      "Financial Aid": "Varies by university"
+    }
+  },
+  "UK_Application_Guide": {
+    "steps": [
+      "Register on UCAS",
+      "Choose up to 5 courses",
+      "Write personal statement",
+      "Get reference letter",
+      "Submit application",
+      "Track application",
+      "Receive offers",
+      "Firm/insurance choices",
+      "Apply for visa"
+    ],
+    "timeline": "Start by June for September intake",
+    "important_dates": {
+      "Oxford/Cambridge": "October 15",
+      "Most courses": "January 25",
+      "Art & Design": "March 24"
+    }
+  }
+}
