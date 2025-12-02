@@ -1,0 +1,13 @@
+{
+  "categories": [
+    "study_abroad_programs",
+    "visa_requirements",
+    "tuition_programs",
+    "application_guides",
+    "partner_universities",
+    "scholarships",
+    "faqs"
+  ],
+  "default_top_k": 3,
+  "similarity_threshold": 0.7
+}
