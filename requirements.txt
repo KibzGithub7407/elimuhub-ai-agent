@@ -3,3 +3,5 @@ requests>=2.25
 python-dotenv>=0.19Flask>=2.0
 requests>=2.25
 python-dotenv>=0.19
+urllib3>=2.6.3 # not directly required, pinned by Snyk to avoid a vulnerability
+werkzeug>=3.1.5 # not directly required, pinned by Snyk to avoid a vulnerability
